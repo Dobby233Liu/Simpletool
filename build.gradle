@@ -1,0 +1,25 @@
+plugins {
+	id 'java'
+	id 'application'
+	id 'com.github.johnrengelman.shadow' version '2.0.1'
+	id 'eclipse'
+	id 'idea'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+mainClassName = 'Main'
+
+eclipse.project {
+	natures 'org.eclipse.buildship.core.gradleprojectnature'
+	natures 'org.springsource.ide.eclipse.gradle.core.nature'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {}
+
+version = '0.1'
